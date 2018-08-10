@@ -66,4 +66,49 @@ const portfolio = {
     },
 
   ],
+  en: [
+    {
+      title: 'Fars EMS application',
+      short_description: 'Handle EMS missions',
+      url: '',
+      image: '/assets/img/portfolio/ems-thumbnail.jpg',
+      technologies: ['Go', 'Laravel', 'Mysql', 'Postgresql', 'Realtime', 'Android', 'Angular']
+    },
+    {
+      title: 'ARG Clinic',
+      short_description: 'Rehabilitation services',
+      url: 'http://arg-clinic.com',
+      image: '/assets/img/portfolio/03-thumbnail.jpg',
+      technologies: ['Symfony', 'PHP', 'Mysql', 'Bootstrap']
+    },
+    {
+      title: 'Sazebook',
+      short_description: 'Directory of building service providers',
+      url: 'http://sazebook.com',
+      image: '/assets/img/portfolio/sazebook-thumbnail.png',
+      technologies: ['Symfony', 'PHP', 'Mysql', 'Bootstrap']
+    },
+    {
+      title: 'Aroosbook',
+      short_description: 'Directory of wedding service providers',
+      url: 'http://aroosbook.com',
+      image: '/assets/img/portfolio/aroosbook-thumbnail.png',
+      technologies: ['Symfony', 'PHP', 'Mysql', 'Bootstrap']
+    },
+    {
+      title: 'Bagheraaz\'s CRM',
+      short_description: 'A great restaurant in Shiraz, Order your food, reserve your table, etc',
+      url: 'http://bagheraaz.com',
+      image: '/assets/img/portfolio/bagheraaz-thumbnail.png',
+      technologies: ['Symfony', 'PHP', 'Mysql', 'Bootstrap', 'Android']
+    },
+    {
+      title: 'Bazar Gostar',
+      short_description: 'HIS, Contract manager, Marketing, Navigation system information, etc',
+      url: 'http://pegah3.ir',
+      image: '/assets/img/portfolio/pegah-thumbnail.png',
+      technologies: ['Symfony', 'PHP', 'Mysql', 'Bootstrap', 'Android']
+    },
+
+  ],
 };

@@ -5,10 +5,11 @@ export let messages = {
   'services': 'Services',
   'services.q': 'We help you to have a good web presence.',
   'portfolio': 'Portfolio',
-  'portfolio.describe': 'Some of our projects.',
+  'portfolio.describe': 'Projects I have been involved with as a backend developer or fullstack developer.',
   'about': 'About',
   'our_team': 'Team',
   'out_clients': 'Our Clients',
   'contact': 'Contact',
   'tell_more': 'Tell Me More',
+  'more_projects': 'More projects on Linkedin'
 };

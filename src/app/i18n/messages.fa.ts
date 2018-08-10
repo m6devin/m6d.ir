@@ -5,9 +5,11 @@ export let messages = {
   'services': 'خدمات',
   'services.q': 'ما به شما کمک می کنیم که یک وب سایت خوب داشته باشید.',
   'portfolio': 'نمونه کار',
+  'portfolio.describe': 'پروژه هایی که به عنوان برنامه نویس در آنها مشارکت داشته ام.',
   'about': 'درباره',
   'our_team': 'تیم ما',
   'out_clients': 'مشتریان',
   'contact': 'تماس باما',
   'tell_more': 'بیشتر',
+  'more_projects': 'پروژه های بیشتر را در لینکدین ببینید'
 };
