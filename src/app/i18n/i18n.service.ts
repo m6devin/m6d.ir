@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { fa } from './messages.fa';
+import { en } from './messages.en';
 
 @Injectable({
   providedIn: 'root'
 })
 export class I18nService {
-  fa = fa;
   lang = 'en';
   dir = 'ltr';
 
@@ -25,10 +25,17 @@ export class I18nService {
   }
 
   trans(id: string): string {
-    if (this[this.lang] === undefined || this[this.lang] == null) {
+    let langFile: any;
+    try {
+      langFile = require('./messages.' + this.lang);
+    } catch (error) {
       return id;
     }
-    const translated = this[this.lang][id] || id;
+
+    if (langFile === undefined) {
+      return id;
+    }
+    const translated = langFile['messages'][id] || id;
 
     return translated;
   }

@@ -1,3 +1,3 @@
-export let fa = {
-  'hello': 'سلام'
+export let messages = {
+  'welcome': 'به وب سایت من خوش آمدید!'
 };
