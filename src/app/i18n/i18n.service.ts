@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { fa } from '../i18n/messages.fa';
+import { fa } from './messages.fa';
 
 @Injectable({
   providedIn: 'root'
@@ -25,11 +25,10 @@ export class I18nService {
   }
 
   trans(id: string): string {
-    let translated = null;
     if (this[this.lang] === undefined || this[this.lang] == null) {
-      return translated;
+      return id;
     }
-    translated = this[this.lang][id] || null;
+    const translated = this[this.lang][id] || id;
 
     return translated;
   }

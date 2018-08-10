@@ -20,6 +20,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarTopComponent } from './navbar-top/navbar-top.component';
+import { I18nPipe } from './i18n/i18n.pipe';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -35,7 +36,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
     ContactusComponent,
     FooterComponent,
     HeaderComponent,
-    NavbarTopComponent
+    NavbarTopComponent,
+    I18nPipe
   ],
   imports: [
     CommonModule,
