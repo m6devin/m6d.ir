@@ -13,6 +13,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock } from '@fortawesome/free-solid-svg-icons';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -21,7 +22,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
     AppComponent,
     HomeComponent,
     OurServicesComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
