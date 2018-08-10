@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from '../../../node_modules/rxjs';
 
+declare var require: any;
 @Injectable({
   providedIn: 'root'
 })
