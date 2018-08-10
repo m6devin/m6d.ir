@@ -15,6 +15,7 @@ import { OurServicesComponent } from './our-services/our-services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { OurTeamComponent } from './our-team/our-team.component';
+import { OurClientsComponent } from './our-clients/our-clients.component';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -25,7 +26,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
     OurServicesComponent,
     PortfolioComponent,
     AboutComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    OurClientsComponent
   ],
   imports: [
     CommonModule,
