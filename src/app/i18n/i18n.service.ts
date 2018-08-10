@@ -14,24 +14,7 @@ export class I18nService {
   }
 
   getLangAndDir(): any {
-    const url = window.location.href;
-    const name = 'lang';
-    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) {
-      return {
-        lang: this.lang,
-        dir: this.dir,
-      };
-    }
-    if (!results[2]) {
-      return {
-        lang: this.lang,
-        dir: this.dir,
-      };
-    }
-
-    this.lang = decodeURIComponent(results[2].replace(/\+/g, ' '));
+    this.lang = this.getLang();
     if (this.lang === 'fa' || this.lang === 'ar') {
       this.dir = 'rtl';
     }
@@ -41,6 +24,23 @@ export class I18nService {
       dir: this.dir,
     };
 
+  }
+
+  getLang(): string {
+    const url = window.location.href;
+    const name = 'lang';
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) {
+      return this.lang;
+    }
+    if (!results[2]) {
+      return this.lang;
+    }
+
+    this.lang = decodeURIComponent(results[2].replace(/\+/g, ' '));
+
+    return this.lang;
   }
 
   trans(id: string) {

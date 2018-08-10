@@ -3,6 +3,7 @@ export let messages = {
   'nice_meet': 'از دیدار شما خوش وقتم.',
   'mgh': 'محمد غلامی',
   'services': 'خدمات',
+  'services.q': 'ما به شما کمک می کنیم که یک وب سایت خوب داشته باشید.',
   'portfolio': 'نمونه کار',
   'about': 'درباره',
   'our_team': 'تیم ما',
