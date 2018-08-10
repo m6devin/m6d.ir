@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +6,5 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  navIsFixed = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log(number);
-
-    if (number > 100) {
-      this.navIsFixed = true;
-    } else if (this.navIsFixed && number < 10) {
-      this.navIsFixed = false;
-    }
-  }
 }

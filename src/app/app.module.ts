@@ -19,6 +19,7 @@ import { OurClientsComponent } from './our-clients/our-clients.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -33,7 +34,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
     OurClientsComponent,
     ContactusComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarTopComponent
   ],
   imports: [
     CommonModule,
