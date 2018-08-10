@@ -1,33 +1,42 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { fa } from './messages.fa';
-import { en } from './messages.en';
+import { Observable } from '../../../node_modules/rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class I18nService {
-  lang = 'en';
-  dir = 'ltr';
+  private _lang = 'en';
+  private _dir = 'ltr';
 
   constructor(private route: ActivatedRoute) {
     this.getLang();
   }
 
-  getLang() {
-    const lang = this.route.snapshot.queryParamMap.get('lang') || 'en';
-    this.lang = lang;
+  getLang(): Observable<any> {
+    return Observable.create((obs) => {
+      this.route.queryParams.subscribe(params => {
+        this._lang = params['lang'] || 'en';
 
-    if (this.lang === 'fa' || this.lang === 'ar') {
-      this.dir = 'rtl';
-    }
-    return lang;
+        if (this._lang === 'fa' || this._lang === 'ar') {
+          this._dir = 'rtl';
+        }
+
+        return obs.next({
+          lang: this._lang,
+          dir: this._dir,
+        });
+
+      }, err => {
+        return obs.error(null);
+      });
+    });
   }
 
   trans(id: string): string {
     let langFile: any;
     try {
-      langFile = require('./messages.' + this.lang);
+      langFile = require('./messages.' + this._lang);
     } catch (error) {
       return id;
     }
