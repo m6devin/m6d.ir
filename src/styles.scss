@@ -1,3 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'vazir';
+  src: url('/assets/fonts/vazir/vazir?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/vazir/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/vazir/vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/vazir/vazir.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./styles-scss/agency.scss";
