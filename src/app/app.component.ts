@@ -10,11 +10,6 @@ export class AppComponent implements OnInit {
   dir = 'ltr';
   constructor(private i18n: I18nService) {}
   ngOnInit() {
-    this.i18n.getLang().subscribe(ok => {
-      this.dir = ok.dir;
-    }, err => {
-      console.log(err);
-
-    });
+    this.dir = this.i18n.getLangAndDir().dir;
   }
 }

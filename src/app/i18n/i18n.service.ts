@@ -6,37 +6,48 @@ import { Observable } from '../../../node_modules/rxjs';
   providedIn: 'root'
 })
 export class I18nService {
-  private _lang = 'en';
-  private _dir = 'ltr';
+  public lang = 'en';
+  public dir = 'ltr';
 
   constructor(private route: ActivatedRoute) {
-    this.getLang();
+    this.getLangAndDir();
   }
 
-  getLang(): Observable<any> {
-    return Observable.create((obs) => {
-      this.route.queryParams.subscribe(params => {
-        this._lang = params['lang'] || 'en';
+  getLangAndDir(): any {
+    const url = window.location.href;
+    const name = 'lang';
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) {
+      return {
+        lang: this.lang,
+        dir: this.dir,
+      };
+    }
+    if (!results[2]) {
+      return {
+        lang: this.lang,
+        dir: this.dir,
+      };
+    }
 
-        if (this._lang === 'fa' || this._lang === 'ar') {
-          this._dir = 'rtl';
-        }
+    this.lang = decodeURIComponent(results[2].replace(/\+/g, ' '));
+    if (this.lang === 'fa' || this.lang === 'ar') {
+      this.dir = 'rtl';
+    }
 
-        return obs.next({
-          lang: this._lang,
-          dir: this._dir,
-        });
+    return {
+      lang: this.lang,
+      dir: this.dir,
+    };
 
-      }, err => {
-        return obs.error(null);
-      });
-    });
   }
 
-  trans(id: string): string {
+  trans(id: string) {
+
     let langFile: any;
     try {
-      langFile = require('./messages.' + this._lang);
+      langFile = require('./messages.' + this.lang);
     } catch (error) {
       return id;
     }
