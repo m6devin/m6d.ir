@@ -5,6 +5,7 @@ export let messages = {
   'services': 'Services',
   'services.q': 'We help you to have a good web presence.',
   'portfolio': 'Portfolio',
+  'portfolio.describe': 'Some of our projects.',
   'about': 'About',
   'our_team': 'Team',
   'out_clients': 'Our Clients',
