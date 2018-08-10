@@ -12,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock } from '@fortawesome/free-solid-svg-icons';
 import { OurServicesComponent } from './our-services/our-services.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -19,7 +20,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
   declarations: [
     AppComponent,
     HomeComponent,
-    OurServicesComponent
+    OurServicesComponent,
+    PortfolioComponent
   ],
   imports: [
     CommonModule,
