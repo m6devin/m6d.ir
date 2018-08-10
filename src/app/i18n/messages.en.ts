@@ -8,4 +8,5 @@ export let messages = {
   'our_team': 'Team',
   'out_clients': 'Our Clients',
   'contact': 'Contact',
+  'tell_more': 'Tell Me More',
 };

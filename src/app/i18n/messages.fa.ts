@@ -8,4 +8,5 @@ export let messages = {
   'our_team': 'تیم ما',
   'out_clients': 'مشتریان',
   'contact': 'تماس باما',
+  'tell_more': 'بیشتر',
 };
