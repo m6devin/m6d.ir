@@ -8,3 +8,23 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./styles-scss/agency.scss";
+
+.rtl {
+  #about {
+    .section-subheading{
+      text-align: justify !important;
+      direction: rtl !important;
+      line-height: 2.1;
+    }
+  }
+}
+@media(min-width: 768px) {
+  .rtl {
+    #about {
+      .section-subheading{
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    }
+  }
+}
