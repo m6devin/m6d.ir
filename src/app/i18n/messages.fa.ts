@@ -7,6 +7,7 @@ export let messages = {
   'portfolio': 'نمونه کار',
   'portfolio.describe': 'پروژه هایی که به عنوان برنامه نویس در آنها مشارکت داشته ام.',
   'about': 'درباره',
+  'about_me': 'درباره من',
   'our_team': 'تیم ما',
   'out_clients': 'مشتریان',
   'contact': 'تماس باما',

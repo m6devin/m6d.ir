@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { I18nPipe } from './i18n/i18n.pipe';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
 
@@ -37,7 +38,8 @@ library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
     FooterComponent,
     HeaderComponent,
     NavbarTopComponent,
-    I18nPipe
+    I18nPipe,
+    WorkExperienceComponent
   ],
   imports: [
     CommonModule,
