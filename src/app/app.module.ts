@@ -11,6 +11,7 @@ import {NgxPageScrollModule} from 'ngx-page-scroll';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock } from '@fortawesome/free-solid-svg-icons';
+import {faTelegram, faTwitter, faGithub, faLinkedin, faStackOverflow} from '@fortawesome/free-brands-svg-icons';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
@@ -23,7 +24,7 @@ import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { I18nPipe } from './i18n/i18n.pipe';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
-library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock);
+library.add(fas, faCoffee, faShoppingCart, faCircle, faLaptop, faLock, faTelegram, faTwitter, faGithub, faLinkedin, faStackOverflow);
 
 @NgModule({
   declarations: [
