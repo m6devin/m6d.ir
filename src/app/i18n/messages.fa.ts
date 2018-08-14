@@ -12,5 +12,6 @@ export let messages = {
   'out_clients': 'مشتریان',
   'contact': 'تماس باما',
   'tell_more': 'بیشتر',
-  'more_projects': 'پروژه های بیشتر را در لینکدین ببینید'
+  'more_projects': 'پروژه های بیشتر را در لینکدین ببینید',
+  'experience': 'سوابق کاری',
 };

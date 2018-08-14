@@ -12,5 +12,6 @@ export let messages = {
   'out_clients': 'Our Clients',
   'contact': 'Contact',
   'tell_more': 'Tell Me More',
-  'more_projects': 'More projects on Linkedin'
+  'more_projects': 'More projects on Linkedin',
+  'experience': 'Work experiences',
 };
