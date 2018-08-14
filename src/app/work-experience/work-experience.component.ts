@@ -22,20 +22,39 @@ export class WorkExperienceComponent implements OnInit {
 
 const experiences = {
   fa: [
-
+    {
+      title: 'برنامه نویس PHP در شرکت بهمنش نوین',
+      date: 'تیرماه  1393 ← بهمن 1393 (8 ماه)',
+      description: 'شروع رسمی کار در بازار کار. به عنوان fullstack developer.',
+    },
+    {
+      title: 'PHP Developer - آزادکار',
+      date: 'اسفند 1393 ← خرداد 1394 (4 ماه)',
+      description: 'مدت کوتاهی به عنوان بک آزادکار در بازارکار ۲ پروژه تحت وب فروشگاهی را به همراه یکی از دوستان پیاده سازی کردیم.',
+    },
+    {
+      title: 'برنامه نویس PHP و Synfony2 در ثانیه پرداز فناوری اطلاعات',
+      date: 'تیر 1394 ← خرداد 1396 (2 سال)',
+      description: 'تجربه‌ی کار در یک محیط خلاق و استارتاپی.',
+    },
+    {
+      title: 'برنامه نویس Golang و Laravel در ثانیه پرداز اندیشه رسپینا',
+      date: 'تیر 1396 ← اکنون',
+      description: 'تجربه کار در پروژه‌ی مرکز فوریت های پزشکی اورژانس فارس در یک تیم حرفه‌ای.',
+    },
   ],
   en: [
     {
       title: 'PHP Developer at Behmanesh Novin',
-      date: 'Jun 2014 → Mar 2015 (10 months)'
+      date: 'Jun 2014 → Mar 2015 (9 months)',
     },
     {
       title: 'PHP Developer at Self Employed - Freelancer',
-      date: 'Mar 2015 → Jun 2015 (4 months)'
+      date: 'Mar 2015 → Jun 2015 (4 months)',
     },
     {
       title: 'PHP and Synfony2 web developer at Saniyeh Pardazan Fanavari Etelaat',
-      date: 'Jun 2015 → May 2017 (2 years)'
+      date: 'Jun 2015 → May 2017 (2 years)',
     },
     {
       title: 'Golang and Laravel Developer at Andishe Raspina',
