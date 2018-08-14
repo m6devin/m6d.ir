@@ -37,6 +37,17 @@
       }
     }
   }
+  select {
+    font-size: 10px;
+    border-radius: 0% !important;
+    background-color: transparent;
+    color: aliceblue;
+    border: none !important;
+    appearance: listbox;
+    -webkit-appearance: listbox;
+    -moz-appearance: listbox;
+    margin: auto 5px auto 5px;
+  }
 }
 @media(min-width:992px) {
   #mainNav {
