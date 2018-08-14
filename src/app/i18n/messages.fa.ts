@@ -14,4 +14,5 @@ export let messages = {
   'tell_more': 'بیشتر',
   'more_projects': 'پروژه های بیشتر را در لینکدین ببینید',
   'experience': 'سوابق کاری',
+  'story_part': 'پایان'
 };

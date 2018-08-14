@@ -63,9 +63,9 @@
       }
     }
     .timeline-last{
-      width: 100px;
-      height: 100px;
-      left: -34px;
+      width: 60px;
+      height: 60px;
+      left: -9px;
     }
     &.timeline-inverted > .timeline-panel {
       float: right;
@@ -107,13 +107,6 @@
 @media(max-width: 767px){
   .timeline2{
     > li{
-      .timeline-last{
-        width: 60px;
-        height: 60px;
-        left: -9px;
-        border: none !important;
-        border-radius: 0;
-      }
       .timeline-panel {
         position: relative;
         float: left;
@@ -125,80 +118,53 @@
   }
 
 }
-// @media(min-width:768px) {
-//   .timeline2 {
-//     &:before {
-//       left: 0%;
-//     }
-//     > li {
-//       min-height: 100px;
-//       margin-bottom: 100px;
-//       .timeline-panel {
-//         float: left;
-//         width: 100%;
-//         padding: 0 20px 20px 30px;
-//         text-align: right;
-//       }
-//       .timeline-image {
-//         left: 0%;
-//         width: 30px;
-//         height: 30px;
-//         margin-left: -50px;
-//         h4 {
-//           font-size: 13px;
-//           line-height: 18px;
-//           margin-top: 16px;
-//         }
-//       }
-//       &.timeline-inverted > .timeline-panel {
-//         float: right;
-//         padding: 0 30px 20px 20px;
-//         text-align: left;
-//       }
-//     }
-//   }
-// }
-// @media(min-width:992px) {
-//   .timeline2 {
-//     > li {
-//       min-height: 150px;
-//       .timeline-panel {
-//         padding: 0 20px 20px;
-//       }
-//       .timeline-image {
-//         width: 40px;
-//         height: 40px;
-//         margin-left: -75px;
-//         h4 {
-//           font-size: 18px;
-//           line-height: 26px;
-//           margin-top: 30px;
-//         }
-//       }
-//       &.timeline-inverted > .timeline-panel {
-//         padding: 0 20px 20px;
-//       }
-//     }
-//   }
-// }
-// @media(min-width:1200px) {
-//   .timeline2 {
-//     > li {
-//       min-height: 170px;
-//       .timeline-panel {
-//         padding: 0 20px 20px 100px;
-//       }
-//       .timeline-image {
-//         width: 45px;
-//         height: 45px;
-//         margin-left: -85px;
-//         h4 {
-//           margin-top: 40px;
-//         }
-//       }
-//       &.timeline-inverted > .timeline-panel {
-//         padding: 0 100px 20px 20px;
-//       }
-//     }
-//   }
-// }
+.rtl {
+  .timeline2 {
+    &:before {
+      right: 17px;
+      margin-right: -1.5px;
+    }
+    > li {
+      .timeline-panel {
+        float: right;
+        width: 100%;
+        padding: 0 100px 0 20px;
+        text-align: right;
+        &:before {
+          left: auto;
+          right: -15px;
+          border-left-width: 15px;
+          border-right-width: 0;
+        }
+        &:after {
+          left: auto;
+          right: -14px;
+          border-left-width: 14px;
+          border-right-width: 0;
+        }
+      }
+      .timeline-image {
+        right: 0;
+        margin-right: 0;
+      }
+      .timeline-last{
+        right: -9px;
+      }
+    }
+  }
+  @media(max-width: 767px){
+    .timeline2{
+      > li{
+        .timeline-last{
+          right: -9px;
+        }
+        .timeline-panel {
+          float: right;
+          padding: 0 42px 0 20px;
+          text-align: right;
+        }
+      }
+    }
+
+  }
+}

@@ -33,7 +33,7 @@ const experiences = {
       description: 'مدت کوتاهی به عنوان بک آزادکار در بازارکار ۲ پروژه تحت وب فروشگاهی را به همراه یکی از دوستان پیاده سازی کردیم.',
     },
     {
-      title: 'برنامه نویس PHP و Synfony2 در ثانیه پرداز فناوری اطلاعات',
+      title: 'برنامه نویس PHP و Synfony2 در ثانیه پردازان فناوری اطلاعات',
       date: 'تیر 1394 ← خرداد 1396 (2 سال)',
       description: 'تجربه‌ی کار در یک محیط خلاق و استارتاپی.',
     },
@@ -46,7 +46,7 @@ const experiences = {
   en: [
     {
       title: 'PHP Developer at Behmanesh Novin',
-      date: 'Jun 2014 → Mar 2015 (9 months)',
+      date: 'Jun 2014 → Mar 2015 (8 months)',
     },
     {
       title: 'PHP Developer at Self Employed - Freelancer',

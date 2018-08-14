@@ -14,4 +14,5 @@ export let messages = {
   'tell_more': 'Tell Me More',
   'more_projects': 'More projects on Linkedin',
   'experience': 'Work experiences',
+  'story_part': 'The End'
 };
