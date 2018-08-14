@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { I18nService } from '../i18n/i18n.service';
 
 @Component({
   selector: 'app-navbar-top',
@@ -7,10 +8,21 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class NavbarTopComponent implements OnInit {
   navIsFixed = false;
-
-  constructor() { }
+  lang = 'en';
+  langs = [
+    {
+      alpha2code: 'fa',
+      title: 'پارسی',
+    },
+    {
+      alpha2code: 'en',
+      title: 'EN',
+    }
+  ];
+  constructor(private i18n: I18nService) { }
 
   ngOnInit() {
+    this.lang = this.i18n.getLang();
   }
 
   @HostListener('window:scroll', [])
@@ -21,6 +33,11 @@ export class NavbarTopComponent implements OnInit {
     } else if (this.navIsFixed && number < 10) {
       this.navIsFixed = false;
     }
+  }
+
+  changeLang() {
+    const path = window.location.origin + '?lang=' + this.lang;
+    window.location.href = path;
   }
 
 }
