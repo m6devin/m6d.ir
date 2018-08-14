@@ -7,20 +7,20 @@ import { I18nService } from '../i18n/i18n.service';
   styleUrls: ['./work-experience.component.scss']
 })
 export class WorkExperienceComponent implements OnInit {
-  experinces = [];
+  experiences = [];
   dir: '';
   constructor(private i18n: I18nService) { }
 
   ngOnInit() {
     const ld = this.i18n.getLangAndDir();
     this.dir = ld.dir;
-    this.experinces = experinces[ld.lang];
+    this.experiences = experiences[ld.lang];
   }
 
 }
 
 
-const experinces = {
+const experiences = {
   fa: [
 
   ],
