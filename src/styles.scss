@@ -1,30 +1,34 @@
 @font-face {
   font-family: 'vazir';
   src: url('/assets/fonts/vazir/vazir?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/vazir/vazir.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/assets/fonts/vazir/vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/vazir/vazir.svg#svgFontName') format('svg'); /* Legacy iOS */
+  url('/assets/fonts/vazir/vazir.woff') format('woff'), /* Pretty Modern Browsers */
+  url('/assets/fonts/vazir/vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/assets/fonts/vazir/vazir.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "./styles-scss/agency.scss";
+#about {
+  .section-subheading {
+    text-align: justify !important;
+    line-height: 2.1;
+  }
+}
 
 .rtl {
   #about {
-    .section-subheading{
-      text-align: justify !important;
+    .section-subheading {
       direction: rtl !important;
-      line-height: 2.1;
     }
   }
 }
+
 @media(min-width: 768px) {
-  .rtl {
-    #about {
-      .section-subheading{
-        padding-left: 10%;
-        padding-right: 10%;
-      }
+  #about {
+    .section-subheading {
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
 }
